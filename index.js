@@ -228,8 +228,8 @@ getProjectDescription(project);
                     ${primaryLink}
                     ${codeLink}
                 </div>
-                <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" data-id="${day}" onclick="event.stopPropagation()">
-                    <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark"></i>
+                <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" data-id="${day}" onclick="event.stopPropagation()" aria-label="Toggle bookmark">
+                    <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark" aria-hidden="true"></i>
                 </button>
             </div>
         `,
